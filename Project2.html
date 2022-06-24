@@ -19,13 +19,13 @@
 			<a href="http://stu.cbu.edu/~nmutasa/Contact.html">CONTACT</a>
 		</H2>
 
-		<center><img src="logo.png" vspace=5></center>
+		<img id = "Logo" src="logo.png" vspace=5>
 		<H4>A Sustainable, Fine Dining Experience.</H4>
+		<!-- <BR><BR>
 		<BR><BR>
 		<BR><BR>
 		<BR><BR>
-		<BR><BR>
-		<BR><BR>
+		<BR><BR> -->
 
 
 		<a name="res">
@@ -35,8 +35,9 @@
 				<BR><BR>
 				First and Last Name: <input type="text" size=40 name="Name">
 				<BR><BR>
-				Date(ex. 05/25/20): <input type="text" size=20 name="Date">
-				Time(ex. 09:30PM): <input type="text" size=20 name="Time">
+				<label for="Date">Date(ex. 05/25/20):</label> <input type="text" size=20 name="Date">
+				<BR>
+				<label for="Time">Time(ex. 09:30PM):</label> <input type="text" size=20 name="Time">
 				<BR><BR>
 				<input type="submit" name="submit" value="submit">
 				<input type="reset" name="reset" value="reset">
@@ -61,9 +62,10 @@
 				<Form method="post" action="http://facstaff.cbu.edu/dbrandon/echo.php">
 					<BR><BR>
 					First Name: <input type="text" size=20 name="Name">
+					<BR>
 					Date of Visit: <input type="text" size=20 name="Visit">
 					<BR><BR>
-					Comments: <input type="text" size=65 name="Review">
+					<label for="Comments">Comments:</label> <input type="text" id = "Comments" size=65 name="Review">
 					<BR><BR>
 					<input type="submit" name="submit" value="submit">
 					<input type="reset" name="reset" value="reset">
